@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "LandParcel" ALTER COLUMN "name" DROP NOT NULL,
+ALTER COLUMN "location" DROP NOT NULL,
+ALTER COLUMN "location" SET DATA TYPE TEXT;

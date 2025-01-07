@@ -16,7 +16,7 @@ datasource db {
 
 model LandParcel {
   id          Int      @id @default(autoincrement())
-  name        String
+  name        String?
   description String?
   ownerName   String?
   area        Float
