@@ -28,11 +28,11 @@ fastify.register(cors, {
 fastify.register(fastifyMultipart);
 fastify.register(prismaPlugin);
 
-// Register all routes and plugins dynamically using AutoLoad
-fastify.register(AutoLoad, {
-  dir: path.join(__dirname, 'src'), // Path to your routes directory
-  options: { prefix: '/api' }, // Optional: Add a prefix to your routes
-});
+// // Registering all routes and plugins dynamically using AutoLoad
+// fastify.register(AutoLoad, {
+//   dir: path.join(__dirname, '/'), // Path to routes directory
+//   options: { prefix: '/api' },
+// });
 
 // Function to start the server
 const start = async () => {

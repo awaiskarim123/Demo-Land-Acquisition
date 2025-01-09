@@ -1,11 +1,11 @@
 {
   "name": "land-acquisition",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "ts-node ./src/server.ts",
     "build": "tsc",
-    "serve": "node dist/server.js"
+    "serve": "node dist/server.js",
+    "dev:ts": "ts-node-dev --respawn src/server.ts" 
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,10 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.10.5",
+    "nodemon": "^3.1.9",
     "prisma": "^6.1.0",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",  
     "typescript": "^5.7.2"
   },
   "dependencies": {
